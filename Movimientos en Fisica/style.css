@@ -1,0 +1,130 @@
+body{
+    background-color: rgb(158, 158, 158);
+}
+
+h1{
+    Color: rgb(27, 94, 32);
+    text-align: center;
+    font-family: "Anta", sans-serif;
+    font-size: 70px;
+    padding: 3px;
+    border: 5px solid black;
+    border-style: double;
+    background-color: brown;
+    animation-name: move;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;    
+}
+
+@keyframes move {
+    0%{
+        text-align: left;
+        background-color: aquamarine;
+    }
+    50%{
+        text-align: center;
+        background-color: blue;
+    }
+    100%{
+        text-align: right;
+        background-color: blueviolet;
+    }
+}
+
+.barra-izquierda {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 150px;
+    background-color: #333;
+}
+  
+.barra-izquierda ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+  
+.barra-izquierda li {
+    padding: 10px 20px;
+}
+  
+.barra-izquierda li a {
+    color: white;
+    text-decoration: none;
+    font-family: "Anta", sans-serif;
+    Color: white;
+}
+
+h2{
+    font-family: "Anta", sans-serif;
+    Color: rgb(27, 94, 32);
+    font-size: 40px;
+    text-align: center;
+}
+
+p{
+    font-family: "Anta", sans-serif;
+    font-size: 25px;
+    text-align: left;
+}
+
+img{
+    width: 500px;
+    height: auto;
+}
+
+
+.contenido {
+    margin-left: 130px; /* Asegura que el contenido no esté oculto debajo de la barra de navegación */
+    padding: 20px;
+    
+}
+
+.contenedor {
+    display: flex;
+}
+  
+.izquierda, .derecha {
+    flex: 1;
+}
+  
+.izquierda img, .derecha img {
+    max-width: 100%;
+    height: auto;
+}
+  
+  /* Para separar los elementos */
+.izquierda {
+    margin-right: 10px; /* Ajusta el margen derecho según sea necesario */
+}
+  
+.derecha {
+    margin-left: 10px; /* Ajusta el margen izquierdo según sea necesario */
+}
+
+iframe{
+    width: 450px;
+    height: 315px; 
+    border: 5px double white;
+}  
+
+footer {
+    bottom: 0;
+    width: 100%;
+    height: 90px;
+    background-color:#333;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-container P{
+    text-align: center;
+    font-family: "Anta", sans-serif;
+    color:white;
+}
+
