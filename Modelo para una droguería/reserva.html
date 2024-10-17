@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shrot icon" href="https://th.bing.com/th/id/OIP._hc2zAYZ-Hu4DxGo0267FgHaH4?pid=ImgDet&rs=1">
+    <link rel="stylesheet" href="stylereserva.css">
+    <title>formulario de reserva</title>
+  </head>
+  <body>
+    <h1>Formulario de reserva</h1>
+    
+    <form action="reserva.php" method="POST">
+      
+      <table border="0" align="center">
+        <tr>
+          <td>
+        <label for="reserva">Tipo de reserva:</label>
+        <select name="reserva" id="reserva">
+            <option value="Consulta inicial">Consulta inicial</option>
+            <option value="Evaluacion incial">Evaluacion inicial</option>
+            <option value="Diagnostico exhaustivo">Diagnóstico exhaustivo</option>
+            <option value="Consulta de seguimiento">Consulta de seguimiento</option>
+            <option value="Aplicacion de inyecciones">Aplicacion de inyecciones</option>
+            <option value="Lectura de formulas">Lectura de formulas</option>
+          </select>
+        </td>
+        </tr>
+        <tr>
+          <td>
+            Nombres:
+          </td>
+          <td>
+            <label for="nombre"></label>
+            <input type="text" name="nombre" id="nombre" autofocus required  />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Apellidos:
+          </td>
+          <td>
+            <label for="apellido"></label>
+            <input type="text" name="apellido" id="apellido"  required  />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Fecha:
+          </td>
+          <td>
+            <label for="fecha"></label>
+            <input type="date" name="fecha" id="fecha" required  />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Hora
+          </td>
+          <td>
+            <label for="hora"></label>
+            <input type="time" name="hora" id="hora"  required />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Correo:
+          </td>
+          <td>
+            <label for="correo"></label>
+            <input type="text" name="correo" id="correo" required  />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Número de celular:
+          </td>
+          <td>
+            <label for="celular"></label>
+            <input type="text" name="celular" id="celular" required  />
+          </td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td align="center">
+            <input
+              type="submit"
+              name="enviar"
+              id="enviar"
+              value="Reservar"
+            />
+          </td>
+          <td align="center">
+            <input type="reset" name="borrar" id="borrar" value="Restablecer" />
+          </td>
+        </tr>
+      </table>
+    </form>
+    <a href="index.html" class="boton-flotante">inicio</a>
+  </body>
+</html>

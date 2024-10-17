@@ -1,0 +1,284 @@
+*{
+
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body{  
+  background-image: url("https://th.bing.com/th/id/OIP.IPCHWrZ5d5M06qEQ2yyeDQHaEK?rs=1&pid=ImgDetMain");
+  background-size: repeat;
+}
+  
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  font-family: Georgia;
+  background-color: rgb(42, 124, 111);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px; /* Ajusta según sea necesario */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+h2{
+  color:white;
+}
+.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-item {
+  margin-left: 10px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+#nav-list {
+  display: none;
+}
+
+#menu-toggle {
+  display: block;
+  cursor: pointer;
+  font-size: 24px;
+  margin-right: 20px;
+}
+  
+.portada{
+  padding: auto;
+  display: flex;
+  background-color: #fff;
+  flex-direction: column;
+}
+.portada p{
+  color: rgb(42, 124, 111);
+  font-family: Georgia;
+  font-size: 50px;
+  text-align: center;
+  width: auto;
+}
+  
+.imagen{
+  width: auto;
+  height: auto;
+
+}
+  
+.info{
+  margin: 110px;
+  padding: 100px;  
+  background-color: rgb(42, 124, 111); 
+  background-position:center;
+  font-family:Georgia;
+  color: white;
+  font-size: 35px;
+}
+p{
+  font-family:Georgia;
+  color:white;
+  font-size: 20px;
+}
+  
+#imagen1{
+  width: fit-content;
+  height: fit-content;
+  background-color: white;
+}
+  
+.nosotros{
+  font-family: Georgia;
+  font-size: 60px;
+  color: white;
+  width: auto;
+}
+.nosotros p{
+  font-family: Georgia;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+  
+img{
+    width: 100%;
+    display: block;
+}
+h3{
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+}
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(-3%);
+}
+.card-header{
+  height: 200px;
+    width: fit-content;
+    object-position: 50% 50%;
+    object-fit: cover;
+}
+.card-title{
+    text-align: center;
+    margin: 0;
+    color:white;
+}
+.card-description{
+    flex-grow: 1;
+    color: rgb(42, 124, 111);
+    font-family: Georgia;
+}
+.card-header img{
+    border-radius: 10px 10px 0 0;
+}
+.card-body{
+    border-radius: 0 0 10px 10px;
+    cursor:pointer;
+    background-color: #fff;
+    padding: 20px 15px;
+    text-align: justify;
+    border: 1px solid #ccc;
+}
+@media(min-width: 480px){
+  .contenedor{
+      
+      grid-template-columns: repeat(3, 1fr);
+      gap:  10px;
+  }
+  .card{
+      display: flex;
+      flex-direction: column;
+  }
+  .card-body{
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+  }
+}
+  
+  
+h3{
+  margin: 0;
+  padding: 3%;  
+  background-color: rgb(42, 124, 111); 
+  background-position: left;
+  font-family:Georgia;
+  text-align: center;
+  font-size: 25px;
+}
+  
+.horario{
+  padding: 5px;
+  display: flex;
+  background-color: #fff;
+  flex-direction: column;
+}
+.horario p{
+  color: rgb(42, 124, 111);
+  font-family: Georgia;
+  font-size: 30px;
+  text-align: center;
+}
+  
+.imagen2{
+  width: auto;
+  height: fit-content;
+  padding: auto;
+}
+  
+.contacto{
+  padding: auto;
+  display: flex;
+  background-color: #fff;
+  width: auto;
+  flex-direction: column;
+}
+.contacto p{
+  color: rgb(42, 124, 111);
+  font-family: Georgia;
+  font-size: 40px;
+  text-align: center;
+    
+}
+  
+.imagen3{
+  width: auto;
+  height: 500px;
+}
+  
+.boton-reserva{
+  justify-content: center;
+  bottom: 10px;
+  right: 0px;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+}
+.boton-reserva:hover{
+  box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+  transform: translateY(-3%);
+}
+  
+.boton-reserva a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: justify;
+  line-height: 50px;
+  text-decoration: none;
+  color: #070707;
+}
+  
+footer {
+  bottom: 0;
+  width: 100%;
+  height: 90px;
+  background-color: rgb(42, 124, 111);
+}
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+}
+.footer-container P{
+  text-align: center;
+  font-family: Georgia;
+}
+
+.whatsapp-float {
+  width: 50px;
+  height: 50px;
+  bottom: 200px;
+  right: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: green;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  justify-content: left;
+ }
+
+
+.my-float {
+  margin-top: 16px;
+}
